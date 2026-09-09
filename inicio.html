@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Helping - Inicio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../Inicio/icon-192x192.png">
+
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================
+      INICIO: HEADER / NAVBAR
+      ============================================ -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="../Inicio/Logo real vectorizado.svg" alt="Logo" class="logo-img">
+      </a>
+    </div>
+    <nav class="nav-links">
+      <a href="#" class="active">INICIO</a>
+      <a href="../Quienes somos/Quienes.html">QUIÉNES SOMOS</a>
+      <a href="../Servicio/servicio.html">SERVICIOS</a>
+      <a href="../Portafolio/Portafolio.html">PORTAFOLIO</a>
+      <a href="../Contacto/Contacto.html">CONTACTANOS</a>
+    </nav>
+    <a href="../Inicio de sesion/Sesion.html" class="btn-primary-nav">INICIAR SESION</a>
+  </header>
+  <!-- === TERMINA: HEADER / NAVBAR === -->
+
+
+  <!-- ============================================
+      INICIO: SECCIÓN HERO
+      ============================================ -->
+  <section class="hero">
+    <div class="tag">HELPING DESIGN STUDIO</div>
+    
+    <h1>
+      <span id="typing-text"></span><span class="cursor">|</span>
+    </h1>
+
+    <p class="hero-desc">
+      Fusionamos tecnología de vanguardia y creatividad humana para construir experiencias digitales que definen industrias y emocionan usuarios.
+    </p>
+
+    <!-- Botón de acción Hero (CTA) -->
+    <a href="../Portafolio/Portafolio.html" class="btn-primary">
+      EXPLORA NUESTRO PORTAFOLIO
+    </a>
+  </section>
+  <!-- === TERMINA: SECCIÓN HERO === -->
+
+
+  <!-- ============================================
+      INICIO: SECCIÓN PORTAFOLIO (PROYECTOS)
+      ============================================ -->
+  <section class="projects-section zoom-element">
+    <div class="projects-header">
+      <div>
+        <h2>
+          <span>Diseño</span> <span>visual</span><br>
+          <span>que</span> <span class="neon-text">potencia</span> <span>tu</span> <span>negocio</span>
+        </h2>
+        <p></p>
+      </div>
+      <a href="../Servicio/servicio.html" class="link-all">VER TODO</a>
+    </div>
+
+    <div class="cards-grid">
+      
+      <!-- TARJETA 1 (BRANDING DIGITAL) -->
+      <div class="portfolio-card zoom-element">
+        <div class="card-preview">
+          <img src="../Inicio/Foto Branding Digital.jpg" alt="Vista previa Branding Digital">
+        </div>
+
+        <div class="card-body">
+          <div class="client-header">
+            <div class="client-info">
+              <h3>Branding Digital</h3>
+              <p>Posicionamiento Digital</p>
+            </div>
+          </div>
+          <p class="description">
+            Estrategia visual y conceptual diseñada para ubicar a la marca en el lugar preferente de la mente del consumidor.
+          </p>
+          <a href="#" class="btn-case-study" data-modal="modal-branding">Quiero este servicio ✨</a>
+        </div>
+      </div>
+
+      <!-- TARJETA 2 (IDENTIDAD VISUAL) -->
+      <div class="portfolio-card zoom-element">
+        <div class="card-preview">
+          <img src="../Inicio/Foto identidad visual.jpg" alt="Vista previa Identidad Visual">
+        </div>
+
+        <div class="card-body">
+          <div class="client-header">
+            <div class="client-info">
+              <h3>Identidad visual</h3>
+              <p>Personalidad gráfica</p>
+            </div>
+          </div>
+          <p class="description">
+            Universo estético e intencional creado para proyectar el carácter único del negocio y su público objetivo.
+          </p>
+          <a href="#" class="btn-case-study" data-modal="modal-identidad">Quiero este servicio ✨</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- === TERMINA: SECCIÓN PORTAFOLIO === -->
+
+
+  <!-- ============================================
+      INICIO: MODALES DE PROYECTOS
+      ============================================ -->
+
+  <!-- MODAL PROYECTO 1 (BRANDING DIGITAL) -->
+  <div id="modal-branding" class="modal-overlay">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      
+      <div class="modal-header">
+        <span class="badge">Estrategia & Marca</span>
+        <h2>Branding Digital</h2>
+        <p class="modal-subtitle">Posicionamiento conceptual y visual estratégico.</p>
+      </div>
+
+      <div class="modal-tags">
+        <span>Estrategia</span>
+        <span>Identidad</span>
+        <span>Posicionamiento</span>
+      </div>
+
+      <div class="modal-features">
+        <div class="feature-card">
+          <h4>Enfoque</h4>
+          <p>Preferencia de marca</p>
+        </div>
+        <div class="feature-card">
+          <h4>Alcance</h4>
+          <p>Diferenciación competitiva</p>
+        </div>
+      </div>
+
+      <div class="modal-preview-text">
+        <p>Diseño y gestión de marcas memorables: logotipo, universo visual y propuesta de valor diferenciadora.</p>
+      </div>
+
+      <a href="../Contacto/Contacto.html" class="btn-modal-cta">
+        <span class="btn-main-text">Quiero mi proyecto ↗</span>
+        <span class="btn-sub-text"></span>
+      </a>
+    </div>
+  </div>
+
+  <!-- MODAL PROYECTO 2 (IDENTIDAD VISUAL) -->
+  <div id="modal-identidad" class="modal-overlay">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      
+      <div class="modal-header">
+        <span class="badge">Diseño de Marca</span>
+        <h2>Identidad Visual</h2>
+        <p class="modal-subtitle">Universo estético e intencional para marcas únicas.</p>
+      </div>
+
+      <div class="modal-tags">
+        <span>Diseño de logo</span>
+        <span>Sistema Visual</span>
+        <span>Paleta & Tipografía</span>
+      </div>
+
+      <div class="modal-features">
+        <div class="feature-card">
+          <h4>Carácter</h4>
+          <p>Proyección de marca</p>
+        </div>
+        <div class="feature-card">
+          <h4>Impacto</h4>
+          <p>Reconocimiento duradero</p>
+        </div>
+      </div>
+
+      <div class="modal-preview-text">
+        <p>Creación de sistemas gráficos coherentes: paleta tipográfica, elementos de marca y manuales estéticos para un impacto perdurable.</p>
+      </div>
+
+      <a href="../Contacto/Contacto.html" class="btn-modal-cta">
+        <span class="btn-main-text">Quiero mi proyecto ↗</span>
+        <span class="btn-sub-text"></span>
+      </a>
+    </div>  
+  </div>
+
+
+  <!-- ============================================
+      INICIO: FOOTER / PIE DE PÁGINA
+      ============================================ -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      
+      <!-- Columna 1: Marca y Logo -->
+      <div class="footer-col footer-col-brand">
+        <p class="footer-brand-title">Helping</p>
+
+        <div class="footer-logo-anchor">
+          <a href="../Inicio/inicio.html" class="footer-logo-pop">
+            <img src="../Inicio/Logo real vectorizado.svg" alt="Helping Logo">
+          </a>
+        </div>
+
+        <p class="footer-brand-desc">
+          Agencia de diseño visual, branding e identidades digitales enfocadas en potenciar marcas.
+        </p>
+        <p class="footer-copyright">&copy; 2026 Helping. Todos los derechos reservados.</p>
+      </div>
+
+      <!-- Columna 2: Navegación -->
+      <div class="footer-col">
+        <h4 class="footer-col-title">Navegación</h4>
+        <ul class="footer-menu">
+          <li><a href="../Inicio/inicio.html">Inicio</a></li>
+          <li><a href="../Servicio/servicio.html">Servicios</a></li>
+          <li><a href="../Portafolio/Portafolio.html">Portafolio</a></li>
+          <li><a href="../Contacto/Contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 3: Legales -->
+      <div class="footer-col">
+        <h4 class="footer-col-title">Legales</h4>
+        <ul class="footer-menu">
+          <li><a href="#">Política de Privacidad</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 4: Redes -->
+      <div class="footer-col">
+        <h4 class="footer-col-title">Conecta</h4>
+        <ul class="footer-menu">
+          <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://behance.net" target="_blank" rel="noopener">Behance</a></li>
+          <li><a href="https://wa.me/" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+  <!-- === TERMINA: FOOTER === -->
+
+
+  <!-- ============================================
+      INICIO: SCRIPTS Y LÓGICA JAVASCRIPT
+      ============================================ -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+     /* ----------------------------------------------------
+   1. EFECTO MÁQUINA DE ESCRIBIR CON GLOW PERMANENTE
+   ---------------------------------------------------- */
+const fullText = "CREAMOS LA IDENTIDAD <br> DE TU MARCA";
+const typingElement = document.getElementById("typing-text");
+let index = 0;
+const speed = 70;
+
+const startTU = fullText.indexOf("TU");
+const endTU = startTU + "TU".length;
+
+function typeWriter() {
+  if (index < fullText.length) {
+    if (fullText.substring(index, index + 4) === "<br>") {
+      typingElement.innerHTML += "<br>";
+      index += 4;
+    } else {
+      let char = fullText.charAt(index);
+      let formattedChar = "";
+
+      if (char === " ") {
+        formattedChar = "&nbsp;";
+      } 
+      else if (index >= startTU && index < endTU) {
+        formattedChar = `<span class="glow-text">${char}</span>`;
+      } else {
+        formattedChar = `<span>${char}</span>`;
+      }
+
+      typingElement.innerHTML += formattedChar;
+      index++;
+    }
+
+    setTimeout(typeWriter, speed);
+
+  } else {
+    let lines = fullText.split("<br>");
+    let formattedLines = lines.map(line => {
+      return line.trim().split(" ").map(word => {
+        if (word === "TU") {
+          return `<span class="word-glow glow-text">${word}</span>`;
+        } else {
+          return `<span class="word-glow">${word}</span>`;
+        }
+      }).join(" ");
+    });
+
+    typingElement.innerHTML = formattedLines.join("<br>");
+  }
+}
+
+if (typingElement) {
+  typeWriter();
+}
+
+      /* ----------------------------------------------------
+         2. CONTROLADOR DE MODALES DE PROYECTOS
+         ---------------------------------------------------- */
+      const openButtons = document.querySelectorAll('.btn-case-study');
+      const closeButtons = document.querySelectorAll('.modal-close');
+      const modals = document.querySelectorAll('.modal-overlay');
+
+      openButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+          e.preventDefault();
+          const modalId = button.getAttribute('data-modal');
+          const targetModal = document.getElementById(modalId);
+          if (targetModal) {
+            targetModal.classList.add('active');
+          }
+        });
+      });
+
+      closeButtons.forEach(closeBtn => {
+        closeBtn.addEventListener('click', () => {
+          const modal = closeBtn.closest('.modal-overlay');
+          if (modal) {
+            modal.classList.remove('active');
+          }
+        });
+      });
+
+      modals.forEach(modal => {
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) {
+            modal.classList.remove('active');
+          }
+        });
+      });
+
+
+      /* ----------------------------------------------------
+         3. OBSERVADOR DE ANIMACIÓN ZOOM AL HACER SCROLL
+         ---------------------------------------------------- */
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+          }
+        });
+      }, {
+        threshold: 0.15
+      });
+
+      document.querySelectorAll('.zoom-element').forEach((el) => observer.observe(el));
+
+    });
+    
+
+
+
+  </script>
+
+</body>
+</html>

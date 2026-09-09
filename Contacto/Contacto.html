@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- ============================================
+     HEAD: METADATOS Y RECURSOS
+     ============================================ -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Helping - Contacto</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../Contacto/icon-192x192.png">
+
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<!-- === FIN: HEAD === -->
+
+<body>
+
+  <!-- ============================================
+     INICIO: HEADER / NAVBAR
+     ============================================ -->
+  <header class="navbar">
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="../Contacto/Logo real vectorizado.svg" alt="Logo" class="logo-img">
+      </a>
+    </div>
+    <nav class="nav-links">
+      <a href="../Inicio/inicio.html">INICIO</a>
+      <a href="../Quienes somos/Quienes.html">QUIÉNES SOMOS</a>
+      <a href="../Servicio/servicio.html">SERVICIOS</a>
+      <a href="../Portafolio/Portafolio.html">PORTAFOLIO</a>
+      <a href="#"class ="active">CONTACTANOS</a>
+    </nav>
+    <a href="../Inicio de sesion/Sesion.html" class="btn-primary-nav">INICIAR SESION</a>
+  </header>
+  <!-- === TERMINA: HEADER / NAVBAR === -->
+
+
+  <!-- ============================================
+       CONTENIDO PRINCIPAL
+       ============================================ -->
+  <main class="contact-container">
+    
+    <!-- COLUMNA IZQUIERDA: INFORMACIÓN DE CONTACTO -->
+    <div class="contact-info">
+      
+      <h1 class="main-title">
+        <span class="word-glow">Hablemos</span><br>
+        <span class="word-glow">de</span> 
+        <span class="word-glow">tu</span><br>
+        <span class="word-glow">próximo</span><br>
+        <span class="word-glow">gran</span><br>
+        <span class="word-glow highlight">proyecto</span>
+      </h1>
+      
+      <p class="description">
+        Fusionamos visión estratégica con ejecución técnica para crear experiencias digitales que definen el futuro de tu industria.
+      </p>
+
+      <!-- Bloques de contacto directo -->
+      <div class="info-blocks">
+        
+        <div class="info-item">
+          <i data-lucide="at-sign" class="info-icon"></i>
+          <div>
+            <span class="label">ESCRÍBENOS</span>
+            <a href="mailto:hello@vanguard.agency" class="value">hello@vanguard.agency</a>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <i data-lucide="map-pin" class="info-icon"></i>
+          <div>
+            <span class="label">VISÍTANOS</span>
+            <p class="value">Av. de la Innovación 404, Tech District<br>Madrid, España</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Placeholder para imagen representativa -->
+      <div class="image-placeholder">
+        <span>img</span>
+      </div>
+
+    </div>
+    <!-- === FIN: COLUMNA IZQUIERDA === -->
+
+
+    <!-- COLUMNA DERECHA: FORMULARIO -->
+    <div class="contact-form-card">
+      <form action="#" method="POST">
+        
+        <!-- Nombre y Correo -->
+        <div class="form-row">
+          <div class="form-group">
+            <input type="text" id="nombre" placeholder="TU NOMBRE" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="EMAIL CORPORATIVO" required>
+          </div>
+        </div>
+
+        <!-- Selección de servicios (Chips) -->
+        <div class="form-group">
+          <p class="section-label">¿QUÉ SERVICIO NECESITAS?</p>
+          <div class="chips-container">
+            <label class="chip">
+              <input type="checkbox" name="servicio" value="branding">
+              <span>BRANDING</span>
+            </label>
+            <label class="chip">
+              <input type="checkbox" name="servicio" value="uiux">
+              <span>UI/UX DESIGN</span>
+            </label>
+            <label class="chip">
+              <input type="checkbox" name="servicio" value="development">
+              <span>DEVELOPMENT</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Mensaje -->
+        <div class="form-group">
+          <textarea id="proyecto" rows="5" placeholder="CUÉNTANOS SOBRE TU PROYECTO" required></textarea>
+        </div>
+
+        <!-- Política de Privacidad -->
+        <div class="form-group checkbox-group">
+          <input type="checkbox" id="privacy" required>
+          <label for="privacy">
+            Acepto la política de privacidad y el tratamiento de mis datos técnicos.
+          </label>
+        </div>
+
+        <!-- Botón de Envío -->
+        <button type="submit" class="btn-submit">
+          ENVIAR PROPUESTA <i data-lucide="arrow-right"></i>
+        </button>
+
+      </form>
+    </div>
+    <!-- === FIN: COLUMNA DERECHA === -->
+
+  </main>
+  <!-- === FIN: CONTENIDO PRINCIPAL === -->
+
+
+  <!-- ============================================
+      INICIO: FOOTER / PIE DE PÁGINA
+      ============================================ -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      
+      <!-- Columna 1: Marca y Logo -->
+      <div class="footer-col footer-col-brand">
+        <p class="footer-brand-title">Helping</p>
+
+        <div class="footer-logo-anchor">
+          <a href="../Contacto/Contacto.html" class="footer-logo-pop">
+            <img src="../Inicio/Logo real vectorizado.svg" alt="Helping Logo">
+          </a>
+        </div>
+
+        <p class="footer-brand-desc">
+          Agencia de diseño visual, branding e identidades digitales enfocadas en potenciar marcas.
+        </p>
+        <p class="footer-copyright">&copy; 2026 Helping. Todos los derechos reservados.</p>
+      </div>
+
+      <!-- Columna 2: Navegación -->
+      <div class="footer-col">
+        <h4 class="footer-col-title">Navegación</h4>
+        <ul class="footer-menu">
+          <li><a href="../Inicio/inicio.html">Inicio</a></li>
+          <li><a href="../Servicio/servicio.html">Servicios</a></li>
+          <li><a href="../Portafolio/Portafolio.html">Portafolio</a></li>
+          <li><a href="../Contacto/Contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 3: Legales -->
+      <div class="footer-col">
+        <h4 class="footer-col-title">Legales</h4>
+        <ul class="footer-menu">
+          <li><a href="#">Política de Privacidad</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 4: Redes -->
+      <div class="footer-col">
+        <h4 class="footer-col-title">Conecta</h4>
+        <ul class="footer-menu">
+          <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://behance.net" target="_blank" rel="noopener">Behance</a></li>
+          <li><a href="https://wa.me/" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+  <!-- === TERMINA: FOOTER === -->
+

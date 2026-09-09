@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Helping - Inicio De Sesion</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../Inicio/icon-192x192.png">
+
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================
+      INICIO: HEADER / NAVBAR
+      ============================================ -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="../Inicio de sesion/Logo real vectorizado.svg" alt="Logo" class="logo-img">
+      </a>
+    </div>
+    <nav class="nav-links">
+      <a href="../Inicio/inicio.html">INICIO</a>
+      <a href="../Quienes somos/Quienes.html">QUIÉNES SOMOS</a>
+      <a href="../Servicio/servicio.html">SERVICIOS</a>
+      <a href="../Portafolio/Portafolio.html">PORTAFOLIO</a>
+      <a href="../Contacto/Contacto.html">CONTACTACTANOS</a>
+    </nav>
+    <a href="#" class="btn-primary-nav">INICIAR SESION</a>
+  </header>
+  <!-- === TERMINA: HEADER / NAVBAR === -->
+
+  <!-- ============================================
+      INICIO: CONTENEDOR PRINCIPAL LOGIN
+      ============================================ -->
+  <main class="login-container">
+    <div class="login-card">
+      
+      <!-- ENCABEZADO DE LA CARD -->
+      <div class="login-header">
+        <h1 class="login-title">Bienvenido<br><span class="highlight">de nuevo</span></h1>
+        <p class="login-subtitle">Ingresa tus credenciales para acceder a tu panel.</p>
+      </div>
+
+      <!-- BOTONES DE INICIO RÁPIDO / SOCIAL -->
+      <div class="social-login">
+        <button type="button" class="btn-social">
+          <i data-lucide="chrome" class="social-icon"></i> Google
+        </button>
+        <button type="button" class="btn-social">
+          <i data-lucide="github" class="social-icon"></i> GitHub
+        </button>
+      </div>
+
+      <div class="divider">
+        <span>O CONTINÚA CON</span>
+      </div>
+
+      <!-- FORMULARIO -->
+      <form action="#" method="POST" class="login-form">
+        
+        <div class="form-group">
+          <label for="email">EMAIL CORPORATIVO</label>
+          <div class="input-wrapper">
+            <i data-lucide="mail" class="input-icon"></i>
+            <input type="email" id="email" placeholder="tu.nombre@empresa.com" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="label-row">
+            <label for="password">CONTRASEÑA</label>
+            <a href="#" class="forgot-pass">¿Olvidaste tu contraseña?</a>
+          </div>
+          <div class="input-wrapper">
+            <i data-lucide="lock" class="input-icon"></i>
+            <input type="password" id="password" placeholder="••••••••" required>
+          </div>
+        </div>
+
+        <div class="form-group checkbox-group">
+          <input type="checkbox" id="remember">
+          <label for="remember">Recordar mi sesión en este dispositivo</label>
+        </div>
+
+        <button type="submit" class="btn-submit">
+          INICIAR SESIÓN <i data-lucide="arrow-right"></i>
+        </button>
+
+      </form>
+
+      <!-- REGISTRO -->
+      <div class="login-footer">
+        <p>¿Aún no tienes una cuenta? <a href="#" class="highlight-link">Solicitar acceso</a></p>
+      </div>
+
+    </div>
+  </main>
+  <!-- === TERMINA: CONTENEDOR PRINCIPAL LOGIN === -->
+
+
+  <!-- ============================================
+      INICIO: FOOTER / PIE DE PÁGINA
+      ============================================ -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      
+      <!-- Columna 1: Marca y Logo -->
+      <div class="footer-col footer-col-brand">
+        <p class="footer-brand-title">Helping</p>
+
+        <div class="footer-logo-anchor">
+          <a href="../Inicio de sesion/Sesion.html" class="footer-logo-pop">
+            <img src="../Inicio de sesion/Logo real vectorizado.svg" alt="Helping Logo">
+          </a>
+        </div>
+
+        <p class="footer-brand-desc">
+          Agencia de diseño visual, branding e identidades digitales enfocadas en potenciar marcas.
+        </p>
+        <p class="footer-copyright">&copy; 2026 Helping. Todos los derechos reservados.</p>
+      </div>
+
+      <!-- Columna 2: Navegación -->
+      <div class="footer-col">
+        <h4 class="footer-col-title">Navegación</h4>
+        <ul class="footer-menu">
+          <li><a href="../Inicio/inicio.html">Inicio</a></li>
+          <li><a href="../Servicio/servicio.html">Servicios</a></li>
+          <li><a href="../Portafolio/Portafolio.html">Portafolio</a></li>
+          <li><a href="../Contacto/Contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 3: Legales -->
+      <div class="footer-col">
+        <h4 class="footer-col-title">Legales</h4>
+        <ul class="footer-menu">
+          <li><a href="#">Política de Privacidad</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 4: Redes -->
+      <div class="footer-col">
+        <h4 class="footer-col-title">Conecta</h4>
+        <ul class="footer-menu">
+          <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://behance.net" target="_blank" rel="noopener">Behance</a></li>
+          <li><a href="https://wa.me/" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+  <!-- === TERMINA: FOOTER === -->
+
+
+  <!-- ============================================
+      INICIO: SCRIPTS Y LÓGICA JAVASCRIPT
+      ============================================ -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      }
+    });
+  </script>
+</body>
+</html>

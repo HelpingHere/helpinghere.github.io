@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- INICIO: HEAD -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Helping - Portafolio</title>
+
+  <!-- INICIO: FAVICON -->
+  <link rel="icon" type="image/png" href="../Portafolio/icon-192x192.png">
+  <!-- FIN: FAVICON -->
+
+  <!-- INICIO: CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- FIN: CSS -->
+</head>
+<!-- FIN: HEAD -->
+
+<body>
+
+  <!-- ============================================
+     INICIO: HEADER / NAVBAR
+     ============================================ -->
+  <header class="navbar">
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="../Portafolio/Logo real vectorizado.svg" alt="Logo" class="logo-img">
+      </a>
+    </div>
+    <nav class="nav-links">
+      <a href="../Inicio/inicio.html">INICIO</a>
+      <a href="../Quienes somos/Quienes.html">QUIÉNES SOMOS</a>
+      <a href="../Servicio/servicio.html">SERVICIOS</a>
+      <a href="#" class="active">PORTAFOLIO</a>
+      <a href="../Contacto/Contacto.html">CONTACTANOS</a>
+    </nav>
+    <a href="../Inicio de sesion/Sesion.html" class="btn-primary-nav">INICIAR SESION</a>
+  </header>
+  <!-- === TERMINA: HEADER / NAVBAR === -->
+
+
+
+  <!-- INICIO: CONTENIDO PRINCIPAL -->
+  <main>
+
+    <!-- INICIO: PORTFOLIO HERO -->
+    <section class="portfolio-hero">
+      <span class="tag-label">HELPING DESIGN STUDIO</span>
+      <h1>
+        <span class="word-glow">Casos</span> 
+        <span class="word-glow">de</span> 
+        <span class="word-glow">Éxito</span> 
+        <span class="word-glow">que</span> <br>
+        <span class="word-glow">Definen</span> 
+        <span class="word-glow glow-text">Industrias</span>
+      </h1>
+      <p class="hero-description">
+        Una muestra seleccionada de ecosistemas digitales, marcas globales y productos interactivos desarrollados con precisión técnica y creatividad radical.
+      </p>
+    </section>
+    <!-- FIN: PORTFOLIO HERO -->
+
+    <!-- INICIO: CATEGORY FILTERS -->
+    <div class="filter-section">
+      <button class="filter-btn active" onclick="filterProjects('all', this)">TODOS (6)</button>
+      <button class="filter-btn" onclick="filterProjects('branding', this)">BRANDING & UI/UX</button>
+      <button class="filter-btn" onclick="filterProjects('product', this)">PRODUCT DESIGN</button>
+      <button class="filter-btn" onclick="filterProjects('dev', this)">DEVELOPMENT</button>
+      <button class="filter-btn" onclick="filterProjects('3d', this)">3D & MOTION</button>
+    </div>
+    <!-- FIN: CATEGORY FILTERS -->
+
+    <!-- INICIO: PORTFOLIO GRID -->
+    <section class="portfolio-grid" id="projectsGrid">
+
+      <!-- INICIO: PROJECT CARD 1 -->
+      <article class="project-card" data-category="branding">
+        <div class="card-preview">
+          <div class="abstract-graphic"></div>
+          <span class="preview-tag">2024</span>
+        </div>
+        <div class="card-info">
+          <span class="badge">BRANDING • UI/UX</span>
+          <h3>Nebula Systems</h3>
+          <p>Plataforma SaaS de infraestructura cuántica con una interfaz futurista y sistema de diseño escalable.</p>
+        </div>
+        <div class="card-footer">
+          <span>Cliente: Fintech / USA</span>
+          <span class="view-link">VER CASO <span>&rarr;</span></span>
+        </div>
+      </article>
+      <!-- FIN: PROJECT CARD 1 -->
+
+      <!-- INICIO: PROJECT CARD 2 -->
+      <article class="project-card" data-category="product">
+        <div class="card-preview">
+          <div class="abstract-graphic cyan-gradient"></div>
+          <span class="preview-tag">2024</span>
+        </div>
+        <div class="card-info">
+          <span class="badge">PRODUCT DESIGN</span>
+          <h3>Core V2</h3>
+          <p>Ecosistema transaccional y dashboard analítico para operaciones financieras de alto rendimiento.</p>
+        </div>
+        <div class="card-footer">
+          <span>Cliente: Core Global</span>
+          <span class="view-link">VER CASO <span>&rarr;</span></span>
+        </div>
+      </article>
+      <!-- FIN: PROJECT CARD 2 -->
+
+      <!-- INICIO: PROJECT CARD 3 -->
+      <article class="project-card" data-category="dev">
+        <div class="card-preview">
+          <div class="abstract-graphic"></div>
+          <span class="preview-tag">2023</span>
+        </div>
+        <div class="card-info">
+          <span class="badge">WEB DEVELOPMENT</span>
+          <h3>Aura Health AI</h3>
+          <p>Plataforma web inmersiva para salud preventiva impulsada por algoritmos de inteligencia artificial.</p>
+        </div>
+        <div class="card-footer">
+          <span>Cliente: Aura Health</span>
+          <span class="view-link">VER CASO <span>&rarr;</span></span>
+        </div>
+      </article>
+      <!-- FIN: PROJECT CARD 3 -->
+
+      <!-- INICIO: PROJECT CARD 4 -->
+      <article class="project-card" data-category="3d">
+        <div class="card-preview">
+          <div class="abstract-graphic cyan-gradient-alt"></div>
+          <span class="preview-tag">2023</span>
+        </div>
+        <div class="card-info">
+          <span class="badge">3D & MOTION</span>
+          <h3>Vortex Digital</h3>
+          <p>Dirección de arte y experiencia 3D interactiva para la presentación de nuevos activos digitales.</p>
+        </div>
+        <div class="card-footer">
+          <span>Cliente: Vortex Media</span>
+          <span class="view-link">VER CASO <span>&rarr;</span></span>
+        </div>
+      </article>
+      <!-- FIN: PROJECT CARD 4 -->
+
+      <!-- INICIO: PROJECT CARD 5 -->
+      <article class="project-card" data-category="product">
+        <div class="card-preview">
+          <div class="abstract-graphic"></div>
+          <span class="preview-tag">2023</span>
+        </div>
+        <div class="card-info">
+          <span class="badge">PRODUCT DESIGN • MOBILE</span>
+          <h3>Kinetix Mobility</h3>
+          <p>Aplicación de telemetría e interfaz de usuario integrada para la nueva generación de vehículos eléctricos.</p>
+        </div>
+        <div class="card-footer">
+          <span>Cliente: Kinetix EV</span>
+          <span class="view-link">VER CASO <span>&rarr;</span></span>
+        </div>
+      </article>
+      <!-- FIN: PROJECT CARD 5 -->
+
+      <!-- INICIO: PROJECT CARD 6 -->
+      <article class="project-card" data-category="branding">
+        <div class="card-preview">
+          <div class="abstract-graphic"></div>
+          <span class="preview-tag">2022</span>
+        </div>
+        <div class="card-info">
+          <span class="badge">BRANDING & IDENTIDAD</span>
+          <h3>Synthetix Labs</h3>
+          <p>Rebranding global y guía de estilo corporativa para firma líder en biotecnología aplicada.</p>
+        </div>
+        <div class="card-footer">
+          <span>Cliente: Synthetix Inc</span>
+          <span class="view-link">VER CASO <span>&rarr;</span></span>
+        </div>
+      </article>
+      <!-- FIN: PROJECT CARD 6 -->
+
+    </section>
+    <!-- FIN: PORTFOLIO GRID -->
+
+    <!-- INICIO: METRICS BAR -->
+    <section class="stats-bar">
+      <div class="stat-box">
+        <h2>120+</h2>
+        <p>PROYECTOS ENTREGADOS</p>
+      </div>
+      <div class="stat-box">
+        <h2>15</h2>
+        <p>AWARDS DE DISEÑO</p>
+      </div>
+      <div class="stat-box">
+        <h2>8</h2>
+        <p>PAÍSES ALCANZADOS</p>
+      </div>
+      <div class="stat-box">
+        <h2>99.8%</h2>
+        <p>SATISFACCIÓN CLIENTE</p>
+      </div>
+    </section>
+    <!-- FIN: METRICS BAR -->
+
+    <!-- INICIO: CALL TO ACTION -->
+    <section class="cta-banner">
+      <h2>
+        <span class="word-glow">¿Tienes</span> 
+        <span class="word-glow">un</span> 
+        <span class="word-glow">proyecto</span> 
+        <span class="word-glow">en</span> 
+        <span class="word-glow glow-text">mente?</span>
+      </h2>
+      <p>Transformamos conceptos complejos en productos digitales memorables y de alto impacto comercial.</p>
+      <a href="../Contacto/Contacto.html" class="btn-cyan">INICIA TU PROYECTO</a>
+    </section>
+    <!-- FIN: CALL TO ACTION -->
+
+  </main>
+  <!-- FIN: CONTENIDO PRINCIPAL -->
+
+
+<!-- ============================================
+      INICIO: FOOTER / PIE DE PÁGINA
+      ============================================ -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      
+      <!-- Columna 1: Marca y Logo -->
+      <div class="footer-col footer-col-brand">
+        <p class="footer-brand-title">Helping</p>
+
+        <div class="footer-logo-anchor">
+          <a href="../Portafolio/Portafolio.html" class="footer-logo-pop">
+            <img src="../Inicio/Logo real vectorizado.svg" alt="Helping Logo">
+          </a>
+        </div>
+
+        <p class="footer-brand-desc">
+          Agencia de diseño visual, branding e identidades digitales enfocadas en potenciar marcas.
+        </p>
+        <p class="footer-copyright">&copy; 2026 Helping. Todos los derechos reservados.</p>
+      </div>
+
+      <!-- Columna 2: Navegación -->
+      <div class="footer-col">
+        <h4 class="footer-col-title">Navegación</h4>
+        <ul class="footer-menu">
+          <li><a href="../Inicio/inicio.html">Inicio</a></li>
+          <li><a href="../Servicio/servicio.html">Servicios</a></li>
+          <li><a href="../Portafolio/Portafolio.html">Portafolio</a></li>
+          <li><a href="../Contacto/Contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 3: Legales -->
+      <div class="footer-col">
+        <h4 class="footer-col-title">Legales</h4>
+        <ul class="footer-menu">
+          <li><a href="#">Política de Privacidad</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 4: Redes -->
+      <div class="footer-col">
+        <h4 class="footer-col-title">Conecta</h4>
+        <ul class="footer-menu">
+          <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://behance.net" target="_blank" rel="noopener">Behance</a></li>
+          <li><a href="https://wa.me/" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+  <!-- === TERMINA: FOOTER === -->
+  <!-- BOTÓN FLOTANTE CHAT -->
+  <button class="chat-btn" aria-label="Chat">💬</button>
+
+
+  <!-- INICIO: SCRIPTS -->
+  <script>
+    function filterProjects(category, button) {
+      const buttons = document.querySelectorAll('.filter-btn');
+      buttons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      const cards = document.querySelectorAll('.project-card');
+      cards.forEach(card => {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+  <!-- FIN: SCRIPTS -->
+
+</body>
+</html>
